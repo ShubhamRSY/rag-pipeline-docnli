@@ -48,6 +48,7 @@ from transformers import pipeline
 
 nli = pipeline("text-classification", model="roberta-large-mnli")
 nli("Premise </s></s> Hypothesis")
+```
 🎯 Why This Matters
 ✅ Implements Semantic Search + LLM
 
@@ -58,22 +59,12 @@ nli("Premise </s></s> Hypothesis")
 📚 Author
 Shubham Yedekar
 📧 yedekarshubham7188@gmail.com
-🔗 LinkedIn
-📦 More Projects
 
-📜 License
-MIT License
 
-yaml
-Copy
-Edit
-
----
 
 Let me know when you're ready and I’ll help you upload this to your GitHub repo.
 
-2/2
-```
+
 
 
 
