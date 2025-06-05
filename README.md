@@ -2,6 +2,39 @@
 
 This repository implements a complete Retrieval-Augmented Generation (RAG) pipeline for claim verification using the [DocNLI dataset](https://huggingface.co/datasets/doc_nli). It integrates semantic search and natural language inference (NLI) to determine if a hypothesis is **Supported**, **Refuted**, or **Not Enough Info**.
 
+📊 Dataset: DocNLI
+The DocNLI dataset is a benchmark for evaluating natural language inference (NLI) in real-world document settings. Each entry in the dataset contains:
+
+Premise: A sentence or paragraph extracted from a document.
+
+Hypothesis: A claim that needs to be verified using the premise.
+
+Label: The relationship between the premise and the hypothesis:
+
+entailment → the hypothesis is supported by the premise.
+
+contradiction → the hypothesis is refuted by the premise.
+
+neutral → the premise does not provide enough information.
+
+🧾 Example Entry
+json
+Copy
+Edit
+{
+  "premise": "US cities along the Gulf of Mexico from Florida to eastern Texas were on alert...",
+  "hypothesis": "US cities along the Gulf of Mexico from Alabama to eastern Texas were on alert...",
+  "label": "contradiction"
+}
+🔍 Why Use DocNLI?
+It's structured for NLI tasks.
+
+Designed to work well with retrieval-based systems.
+
+Encourages development of fact-checking pipelines using long-form documents.
+
+
+
 ---
 
 ## 📁 Project Structure
